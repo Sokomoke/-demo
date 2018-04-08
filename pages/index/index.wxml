@@ -1,0 +1,120 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class='container'>
+  <view class='swiper-imgs'>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src='{{item}}' class="slide-image" width="355" height="155"/> 
+          </swiper-item>
+        </block>
+    </swiper>
+    <!-- <button bindtap="changeIndicatorDots"> indicator-dots </button> -->
+  </view>
+  <view class='section-search'>
+    <icon class='search-icon' type='search' size='{{searchNub}}'></icon>
+    <input class='search-book' placeholder-style='font-size:{{searchNub}}px' placeholder='{{inputValue}}' auto-focus=''></input>
+  </view>
+  <view class='fiction-item'>
+    <view class='fiction-male'>男生热门</view>
+    <view class='flex-wrp-vertical'>
+      <view class='flex-item-vertical'>
+        <view class='fiction-content'>
+          <image class='fiction-picture' src='../../images/perfectworld.jpg'></image>
+          <view class='fiction-content-right'>
+            <view class='right-name'>完美世界</view>
+              <view class='fiction-introduce'>
+                一粒尘可填海，一根草斩尽日月星辰，弹指间天翻地覆。群雄并起，万族林立，诸圣争霸，乱天动地；问苍茫大地，谁主沉浮？一个少年从大荒中走出，一切从这里开始。
+              </view>
+              <view class='author-name'>辰东</view>
+              <view class='numberof'>794609</view>
+              <view class='recommend-num'>人推荐</view>
+          </view>
+        </view>
+      </view>
+      <view class='flex-item-vertical'>
+        <view class='fiction-content'>
+          <image class='fiction-picture' src='../../images/bigmaster.jpg'></image>
+          <view class='fiction-content-right'>
+            <view class='right-name'>大主宰</view>
+              <view class='fiction-introduce'>
+                大千世界，位面交汇，万族林立，群雄荟萃，一位位来自下位面的天之至尊，在这无尽世界，演绎着令人向往的传奇，追求着那主宰之路。
+              </view>
+              <view class='author-name'>天蚕土豆</view>
+              <view class='numberof'>415820</view>
+              <view class='recommend-num'>人推荐</view>
+          </view>
+        </view>
+      </view>
+      <view class='flex-item-vertical'>
+        <view class='fiction-content'>
+          <image class='fiction-picture' src='../../images/You.jpg'></image>
+          <view class='fiction-content-right'>
+            <view class='right-name'>斗破苍穹</view>
+              <view class='fiction-introduce'>
+                这里是属于斗气的世界，没有花俏艳丽的魔法，有的，仅仅是繁衍到巅峰的斗气！
+              </view>
+              <view class='author-name'>辰东</view>
+              <view class='numberof'>191860</view>
+              <view class='recommend-num'>人推荐</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='level'></view>
+    <view class='see-more'>查看更多></view>
+  </view>
+  <view class='fiction-division'></view>
+
+  <view class='fiction-item'>
+    <view class='fiction-male'>女生最爱</view>
+    <view class='flex-wrp-vertical'>
+      <view class='flex-item-vertical'>
+        <view class='fiction-content'>
+          <image class='fiction-picture' src='../../images/allure.jpg'></image>
+          <view class='fiction-content-right'>
+            <view class='right-name'>微微一笑很倾城</view>
+              <view class='fiction-introduce'>
+               男人对女人一见钟情的是什么？容貌？气质？身家？NO，是飞舞灵动的手指！校园王子加游戏高手肖奈同学一见钟情于美女贝微微，可钟情的并非她逼人的艳色，而是她那飞舞在键盘上的纤纤玉手和她镇定自若的气势！！！囧掉了吧？同是网游高手的贝微微，彼时彼刻正在电脑前有条不紊地指挥着帮战，打了一场完美的以弱胜强的辉煌战役，完全没意识到爱神小天使近在己侧……随后，篮球游泳全能优等生与游戏公司老板等身份的肖奈大神开始了网上网下全方位地捕猎美人心……于是，一场爱情，就在一朵花开的时间里，悄然萌生了。
+              </view>
+              <view class='author-name'>顾漫</view>
+              <view class='numberof'>32742</view>
+              <view class='recommend-num'>人推荐</view>
+          </view>
+        </view>
+      </view>
+      <view class='flex-item-vertical'>
+        <view class='fiction-content'>
+          <image class='fiction-picture' src='../../images/startling.jpg'></image>
+          <view class='fiction-content-right'>
+            <view class='right-name'>步步惊心</view>
+              <view class='fiction-introduce'>
+                原本繁华都市的白领女子穿越后成为倔强、任性的“拼命十三妹”若曦。她带着 对清史的洞悉卷入这场九王夺嫡的争斗中，不断地与命运抗争或妥协。她明知道 历史的走向，也知道站在谁一边才是明智的选择，可这里有她深爱之人，于是， 她只能处处为营，步步惊心。
+              </view>
+              <view class='author-name'>桐华</view>
+              <view class='numberof'>27681</view>
+              <view class='recommend-num'>人推荐</view>
+          </view>
+        </view>
+      </view>
+      <view class='flex-item-vertical'>
+        <view class='fiction-content'>
+          <image class='fiction-picture' src='../../images/xiaomo.jpg'></image>
+          <view class='fiction-content-right'>
+            <view class='right-name'>何以笙箫默</view>
+              <view class='fiction-introduce'>
+                一段年少时的爱恋，牵出一生的纠缠。大学时代的赵默笙阳光灿烂，对法学系大才子何以琛一见倾心，开朗直率的她拔足倒追，终于使才气出众的他为她停留驻足。然而，不善表达的他终于使她在一次伤心之下远走他乡……七年后，赵默笙回国，在超市在拥挤的人潮中，第一眼就看到他，他俊挺依旧，出众依然……本书从七年后超市的相遇开始，把一段刻骨铭心的爱情娓娓诉来。书中男主角何以琛深情而执着，平静的外表下汹涌着刻骨的相思，冷淡的语言中暗藏着最深的温柔。如果世界上曾经有她出现过，其他任何人对他来说，都成了将就……
+              </view>
+              <view class='author-name'>顾漫</view>
+              <view class='numberof'>21651</view>
+              <view class='recommend-num'>人推荐</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='level'></view>
+    <view class='see-more'>查看更多></view>
+  </view>
+  <view class='fiction-division'></view>
+  
+</scroll-view>

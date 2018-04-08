@@ -1,0 +1,6 @@
+.home-list {
+  display: block;
+  padding: 40rpx;
+  width: 100vw;
+  margin: 0 auto;
+}
